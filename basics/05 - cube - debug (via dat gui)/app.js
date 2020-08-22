@@ -46,7 +46,7 @@ scene.add(plane);
 
 var cube = new THREE.Mesh(
     new THREE.BoxGeometry(1, 1, 1),
-    new THREE.MeshLambertMaterial( { color: "red" } )
+    new THREE.MeshLambertMaterial({ color: "red" })
 );
 cube.position.y = 0.5;
 cube.castShadow = true;

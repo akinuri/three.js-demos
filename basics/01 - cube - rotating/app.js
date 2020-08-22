@@ -20,9 +20,9 @@ scene.add(cube);
 renderer.render(scene, camera);
 
 function animate() {
-	requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
     cube.rotation.y += THREE.MathUtils.degToRad(0.5);
-	renderer.render(scene, camera);
+    renderer.render(scene, camera);
 }
 
 animate();

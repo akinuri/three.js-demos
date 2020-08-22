@@ -112,9 +112,9 @@ lightFolder.open();
 renderer.render(scene, camera);
 
 function animate() {
-	requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
     cube.rotation.y += 0.01;
-	renderer.render(scene, camera);
+    renderer.render(scene, camera);
 }
 
 animate();

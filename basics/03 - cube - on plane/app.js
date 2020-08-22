@@ -13,14 +13,14 @@ camera.position.z = 2;
 
 var cube = new THREE.Mesh(
     new THREE.BoxGeometry(1, 1, 1),
-    new THREE.MeshLambertMaterial( { color: "red" } )
+    new THREE.MeshLambertMaterial({ color: "red" })
 );
 cube.castShadow = true;
 scene.add(cube);
 
 var plane = new THREE.Mesh(
     new THREE.PlaneGeometry(4,4),
-    new THREE.MeshLambertMaterial( { color: 0xffffff } )
+    new THREE.MeshLambertMaterial({ color: 0xffffff })
 );
 plane.rotation.x = THREE.MathUtils.degToRad(-90);
 plane.position.y = -cube.geometry.parameters.height / 2;
@@ -29,7 +29,7 @@ scene.add(plane);
 
 
 var ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-scene.add( ambientLight );
+scene.add(ambientLight);
 
 var pointLight = new THREE.PointLight(0xffffff, 0.5);
 pointLight.position.set(3,0,0);

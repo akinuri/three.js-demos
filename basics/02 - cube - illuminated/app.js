@@ -12,13 +12,13 @@ camera.position.z = 2;
 
 var cube = new THREE.Mesh(
     new THREE.BoxGeometry(1, 1, 1),
-    new THREE.MeshLambertMaterial( { color: "red" } )
+    new THREE.MeshLambertMaterial({ color: "red" })
 );
 scene.add(cube);
 
 
 var ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-scene.add( ambientLight );
+scene.add(ambientLight);
 
 var pointLight = new THREE.PointLight(0xffffff, 0.5);
 pointLight.position.set(3,0,0);

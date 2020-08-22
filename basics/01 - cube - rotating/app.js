@@ -12,7 +12,7 @@ camera.position.z = 2;
 
 var cube = new THREE.Mesh(
     new THREE.BoxGeometry(1, 1, 1),
-    new THREE.MeshBasicMaterial( { color: "red" } )
+    new THREE.MeshBasicMaterial({ color: "red" })
 );
 scene.add(cube);
 

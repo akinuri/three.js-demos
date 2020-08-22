@@ -13,7 +13,7 @@ scene.add(axesHelper);
 
 var gridHelper = new THREE.GridHelper(5,5);
 gridHelper.position.y = -0.5;
-scene.add( gridHelper );
+scene.add(gridHelper);
 
 
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -40,7 +40,7 @@ scene.add(plane);
 
 
 var ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-scene.add( ambientLight );
+scene.add(ambientLight);
 
 var pointLight = new THREE.PointLight(0xffffff, 0.5);
 pointLight.position.set(3,0,0);

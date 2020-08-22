@@ -19,13 +19,13 @@ var axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
 var gridHelper = new THREE.GridHelper(8,8);
-scene.add( gridHelper );
+scene.add(gridHelper);
 
 
 
 /* ============================== CAMERA ============================== */
 
-var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.x = 3;
 camera.position.y = 4;
 camera.position.z = 3;
@@ -37,7 +37,7 @@ camera.lookAt(0,0,0);
 
 var plane = new THREE.Mesh(
     new THREE.PlaneGeometry(6,6,6,6),
-    new THREE.MeshLambertMaterial( { color: 0xffffff, side: THREE.DoubleSide } )
+    new THREE.MeshLambertMaterial({ color: 0xffffff, side: THREE.DoubleSide })
 );
 plane.rotation.x = THREE.MathUtils.degToRad(-90);
 plane.receiveShadow = true;
@@ -57,7 +57,7 @@ scene.add(cube);
 /* ============================== LIGHTS ============================== */
 
 var ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-scene.add( ambientLight );
+scene.add(ambientLight);
 
 
 var pointLight = new THREE.PointLight(0xffffff, 0.5);

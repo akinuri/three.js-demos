@@ -1,5 +1,5 @@
 var scene = new THREE.Scene();
-
+var gitTest = "hello world";
 
 var renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
